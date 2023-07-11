@@ -5,6 +5,10 @@ VisualStudioVersion = 17.6.33801.468
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorControl.Api", "ElevatorControl.Api\ElevatorControl.Api.csproj", "{BAEA9778-4798-45B9-ACB7-0B8FB1C095B8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorControl.Model", "ElevatorControl.Model\ElevatorControl.Model.csproj", "{51502F48-F5B8-4B86-AFA0-81F988F65A92}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ElevatorControl.Service", "ElevatorControl.Service\ElevatorControl.Service.csproj", "{4E130497-B153-4E55-8D96-20807DE3DF9A}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +19,14 @@ Global
 		{BAEA9778-4798-45B9-ACB7-0B8FB1C095B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BAEA9778-4798-45B9-ACB7-0B8FB1C095B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BAEA9778-4798-45B9-ACB7-0B8FB1C095B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{51502F48-F5B8-4B86-AFA0-81F988F65A92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{51502F48-F5B8-4B86-AFA0-81F988F65A92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{51502F48-F5B8-4B86-AFA0-81F988F65A92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{51502F48-F5B8-4B86-AFA0-81F988F65A92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4E130497-B153-4E55-8D96-20807DE3DF9A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E130497-B153-4E55-8D96-20807DE3DF9A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E130497-B153-4E55-8D96-20807DE3DF9A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E130497-B153-4E55-8D96-20807DE3DF9A}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
