@@ -16,8 +16,7 @@ namespace ElevatorControl.Api.Controllers
         }
 
         /// <summary>
-        /// Add new Destination that can be from a person in the Elevaror Car or
-        /// out of elevaror car are in the floors
+        /// Add a new Destination that can be from a person in the Elevator Car or out of the elevator car are in the floors
         /// </summary>
         /// <param name="floorNumber"></param>
         [HttpPost]
@@ -37,7 +36,7 @@ namespace ElevatorControl.Api.Controllers
         }
 
         /// <summary>
-        /// Return the direction of elevaror 
+        /// Return the direction of elevator 
         /// </summary>
         /// <returns></returns>
         [HttpGet]
