@@ -5,7 +5,7 @@ using static ElevatorControl.Model.Enums;
 namespace ElevatorControl.Api.Controllers
 {
     [ApiController]
-    [Route("[controller]")]
+    [Route("api/[controller]/[action]")]
     public class ElevatorController : ControllerBase
     {
         private readonly IElevator _elevator;
@@ -16,11 +16,10 @@ namespace ElevatorControl.Api.Controllers
         }
 
         /// <summary>
-        /// Add new Destination that can be from a person in the Elevaror Car or
-        /// out of elevaror car are in the floors
+        /// Add a new Destination that can be from a person in the Elevator Car or out of the elevator car are in the floors
         /// </summary>
         /// <param name="floorNumber"></param>
-        [HttpPost(Name = "AddDestination")]
+        [HttpPost]
         public void AddDestination([FromBody] int floorNumber)
         {
             _elevator.AddNewDestination(floorNumber);
@@ -30,17 +29,17 @@ namespace ElevatorControl.Api.Controllers
         /// Return the current floor of Elevaror Car
         /// </summary>
         /// <returns></returns>
-        [HttpGet(Name = "GetCurrentFloor")]
+        [HttpGet]
         public int GetCurrentFloor()
         {
             return _elevator.GetCurrentFloor();
         }
 
         /// <summary>
-        /// Return the direction of elevaror 
+        /// Return the direction of elevator 
         /// </summary>
         /// <returns></returns>
-        [HttpGet(Name = "GetElevatorDirection")]
+        [HttpGet]
         public ElevatorDirection GetElevatorDirection()
         {
             return _elevator.GetDirection();
@@ -50,7 +49,7 @@ namespace ElevatorControl.Api.Controllers
         /// Return the floor number of next destination of elevaror
         /// </summary>
         /// <returns></returns>
-        [HttpGet(Name = "GetNextDestionationFloor")]
+        [HttpGet]
         public int GetNextDestionationFloor()
         {
             return _elevator.GetNextDestionationFloor();
@@ -60,7 +59,7 @@ namespace ElevatorControl.Api.Controllers
         /// Return the totall number of requested that send to elevator system 
         /// </summary>
         /// <returns></returns>
-        [HttpGet(Name = "GetTotalRequests")]
+        [HttpGet]
         public int GetTotalRequests()
         {
             return _elevator.GetTotalRequests();
@@ -70,6 +69,7 @@ namespace ElevatorControl.Api.Controllers
         /// The Elevaror give an instruction to the system to move to next destination
         /// </summary>
         /// <returns></returns>
+        [HttpPost]
         public bool MoveAndCheckIfServed()
         {
             return _elevator.MoveAndCheckIfServed();

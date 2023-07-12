@@ -1,0 +1,146 @@
+{
+	"info": {
+		"_postman_id": "6fbc666a-5633-4e51-93ce-5539de6049de",
+		"name": "Elevaror Control",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "2328499",
+		"_collection_link": "https://lunar-eclipse-497329.postman.co/workspace/Team-Workspace~b2224e35-ce1e-4187-8d09-34389723eaa9/collection/2328499-6fbc666a-5633-4e51-93ce-5539de6049de?action=share&creator=2328499&source=collection_link"
+	},
+	"item": [
+		{
+			"name": "AddDestination",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "1",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "https://localhost:7086/api/Elevator/AddDestination",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7086",
+					"path": [
+						"api",
+						"Elevator",
+						"AddDestination"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetCurrentFloor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7086/api/Elevator/GetCurrentFloor",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7086",
+					"path": [
+						"api",
+						"Elevator",
+						"GetCurrentFloor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetElevatorDirection",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7086/api/Elevator/GetElevatorDirection",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7086",
+					"path": [
+						"api",
+						"Elevator",
+						"GetElevatorDirection"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetNextDestionationFloor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7086/api/Elevator/GetNextDestionationFloor",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7086",
+					"path": [
+						"api",
+						"Elevator",
+						"GetNextDestionationFloor"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "GetTotalRequests",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7086/api/Elevator/GetTotalRequests",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7086",
+					"path": [
+						"api",
+						"Elevator",
+						"GetTotalRequests"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "MoveAndCheckIfServed",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "https://localhost:7086/api/Elevator/MoveAndCheckIfServed",
+					"protocol": "https",
+					"host": [
+						"localhost"
+					],
+					"port": "7086",
+					"path": [
+						"api",
+						"Elevator",
+						"MoveAndCheckIfServed"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
