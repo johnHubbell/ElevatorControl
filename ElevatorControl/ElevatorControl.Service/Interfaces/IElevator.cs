@@ -29,7 +29,7 @@ namespace ElevatorControl.Service.Interfaces
         bool MoveAndCheckIfServed();
 
         /// <summary>
-        /// Get the direction of elevator's movement. Response - ELEVATOR_UP or ELEVATOR_DOWN or ELEVATOR_NONE
+        /// Get the direction of elevator's movement. Response - Elevator_Up or Elevator_Down or Elevator_None
         /// </summary>
         /// <returns>ElevatorDirection</returns>
         ElevatorDirection GetDirection();
