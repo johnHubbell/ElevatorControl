@@ -55,11 +55,11 @@ namespace ElevatorControl.Service.Services
         {
             if (_direction == ElevatorDirection.Elevator_Down)
             {
-                return this._downDestinationFloors.FirstOrDefault();
+                return _downDestinationFloors.FirstOrDefault();
             }
             else if (_direction == ElevatorDirection.Elevator_Up)
             {
-                return this._upDestinationFloors.FirstOrDefault();
+                return _upDestinationFloors.FirstOrDefault();
             }
             else
             {
@@ -97,7 +97,6 @@ namespace ElevatorControl.Service.Services
             }
             else
             {
-                //Do Nothing. Elevator is not moving.
             }
             return false;
         }
