@@ -11,8 +11,6 @@ namespace ElevatorControl.Service.Services
     /// </summary>
     public class Elevator : IElevator
     {
-        private AppSettings appSettings;
-
         private int _currentFloor;
 
         //Sorted in Asc for up movement
@@ -23,9 +21,8 @@ namespace ElevatorControl.Service.Services
 
         ElevatorDirection _direction;
 
-        public Elevator(IOptions<AppSettings> appSettings)
+        public Elevator()
         {
-            this.appSettings = appSettings.Value;
             _currentFloor = 0;
             _upDestinationFloors = new List<int>();
             _downDestinationFloors = new List<int>();
